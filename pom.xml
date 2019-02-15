@@ -364,6 +364,12 @@
                 <groupId>org.apache.rampart.wso2</groupId>
                 <artifactId>rampart-core</artifactId>
                 <version>${rampart.wso2.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.slf4j</groupId>
+                        <artifactId>log4j-over-slf4j</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <dependency>
                 <groupId>org.apache.httpcomponents.wso2</groupId>
@@ -982,6 +988,12 @@
                 <groupId>org.wso2.carbon.mediation</groupId>
                 <artifactId>org.wso2.carbon.cloud.gateway</artifactId>
                 <version>${carbon.mediation.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.slf4j</groupId>
+                        <artifactId>log4j-over-slf4j</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <dependency>
                 <groupId>org.wso2.carbon.mediation</groupId>
@@ -2115,7 +2127,7 @@
             <dependency>
                 <groupId>org.wso2.orbit.com.jayway.jsonpath</groupId>
                 <artifactId>json-path</artifactId>
-                <version>${jsonpath.version}</version>
+                <version>${jayway.jsonpath.orbit.version}</version>
             </dependency>
             <dependency>
                 <groupId>net.minidev</groupId>
@@ -2348,6 +2360,16 @@
                 <scope>test</scope>
             </dependency>
             <dependency>
+                <groupId>org.wso2.orbit.javax.activation</groupId>
+                <artifactId>activation</artifactId>
+                <version>${version.org.wso2.orbit.javax.activation}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.wso2.orbit.commons-text</groupId>
+                <artifactId>commons-text</artifactId>
+                <version>${wso2.commons.text.orbit.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>net.minidev</groupId>
                 <artifactId>accessors-smart</artifactId>
                 <version>${net.minidev.accessors-smart.version}</version>
@@ -2539,6 +2561,8 @@
         <jacoco.agent.version>0.7.5.201505241946</jacoco.agent.version>
         <activemq.version>5.2.0</activemq.version>
         <activemq.broker.version>5.15.2</activemq.broker.version>
+        <version.org.wso2.orbit.javax.activation>1.1.1.wso2v1</version.org.wso2.orbit.javax.activation>
+        <wso2.commons.text.orbit.version>1.6.wso2v1</wso2.commons.text.orbit.version>
         <net.minidev.accessors-smart.version>1.2</net.minidev.accessors-smart.version>
         <org.ow2.asm.asm.version>5.2</org.ow2.asm.asm.version>
     </properties>
