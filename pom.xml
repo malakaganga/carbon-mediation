@@ -2363,6 +2363,11 @@
                 <artifactId>activemq-broker</artifactId>
                 <version>${activemq.broker.version}</version>
                 <scope>test</scope>
+	    </dependency>
+	    <dependency>
+                <groupId>org.wso2.orbit.javax.activation</groupId>
+                <artifactId>activation</artifactId>
+                <version>${version.org.wso2.orbit.javax.activation}</version>
             </dependency>
             <dependency>
                 <groupId>org.wso2.orbit.javax.activation</groupId>
